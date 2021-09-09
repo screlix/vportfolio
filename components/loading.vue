@@ -18,7 +18,7 @@ export default {
       this.loading = false;
     }
   },
-  beforeCreate() {
+  mounted() {
     this.$nextTick(() => {
       this.$nuxt.$loading.start();
 
@@ -29,7 +29,8 @@ export default {
 </script>
 <style scoped>
 .loading-page {
-  position: absolute;
+  position: fixed;
+  z-index: 200;
   top: 0;
   left: 0;
   width: 100%;
