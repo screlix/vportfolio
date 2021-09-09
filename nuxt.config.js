@@ -77,6 +77,6 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     /*transpile: ['VueCarousel'],*/
-  }, 
-  loading:'~/components/LoadingBar.vue'
+  },
+  loading: '~/components/loading.vue'
 };

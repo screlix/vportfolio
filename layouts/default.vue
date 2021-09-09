@@ -25,7 +25,8 @@ export default {
         behavior:'smooth'
       });
     }
-  }
+  }, 
+  
 };
 </script>
 
