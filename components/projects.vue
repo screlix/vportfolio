@@ -51,17 +51,25 @@ export default {
     }
   },
   mounted() {
-    this.observer = new IntersectionObserver((entries) => {
+    this.observer = new IntersectionObserver(entries => {
       if (entries[0].intersectionRatio > 0) {
         this.$refs["projectsref"].classList.add("projectsAnim");
       }
     });
     this.observer.observe(this.$refs.projectsref);
+    var resizeEvent = window.document.createEvent("UIEvents");
+    resizeEvent.initUIEvent("resize", true, false, window, 0);
+    window.dispatchEvent(resizeEvent);
   }
 };
 </script>
 
 <style lang="scss">
+/*.VueCarousel-slide {
+visibility: visible;
+flex-basis: 100%;
+width: 100%;
+}*/
 #projects {
   padding: 6rem 0;
   .projectscol1 {
@@ -98,14 +106,14 @@ export default {
     transform: scale(1);
   }
 }
-@media only screen and (max-width:576px){
-    .projectscol1 {
+@media only screen and (max-width: 576px) {
+  .projectscol1 {
     h1 {
       font-size: 60px !important;
     }
   }
-.projectscol2 {
-  margin-bottom: 3rem;
-}
+  .projectscol2 {
+    margin-bottom: 3rem;
+  }
 }
 </style>

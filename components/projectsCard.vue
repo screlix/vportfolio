@@ -1,6 +1,6 @@
 <template>
   <div id="projectsCard">
-    <img :src="require(`@/assets/projects/${imgL}`)" alt="" />
+    <img :src="require(`../assets/projects/${imgL}`)" alt="" />
     <div class="previewlink"><a :href="link">Preview</a></div>
     <h2>{{ namex }}</h2>
   </div>
