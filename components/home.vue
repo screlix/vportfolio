@@ -21,7 +21,12 @@ import Header from "~/components/headerr.vue";
 export default {
   head() {
     return {
-      meta: [{ name: "keywords", content: "mohamed ifouloussene" }]
+      meta: [
+        { name: "keywords", content: "mohamed ifouloussene" },
+        {
+          name: "google-site-verification", content: "vw6HDZ35LiGY8zf1WbUlz1lo3d4SUh8EeSubOqPO_Jw"
+        }
+      ]
     };
   },
   mounted() {

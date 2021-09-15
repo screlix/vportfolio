@@ -8,11 +8,11 @@ export default {
       lang: "en"
     },
     meta: [
+      { charset: "utf-8" },
       {
         name: "google-site-verification",
         content: "vw6HDZ35LiGY8zf1WbUlz1lo3d4SUh8EeSubOqPO_Jw"
       },
-      { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
         hid: "description",
@@ -30,8 +30,9 @@ export default {
       }
     ],
     link: [
+      //google seo verification :
+      { href: "google63eb02ce8e2b95af.html" },
       { rel: "icon", type: "image/x-icon", href: "/ico2.png" },
-
       //{ rel:"stylesheet", href:"https://use.fontawesome.com/releases/v5.14.0/css/all.css"  },
       {
         rel: "stylesheet",
