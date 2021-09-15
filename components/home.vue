@@ -35,7 +35,7 @@ export default {
     this.$refs["home2ref"].classList.add("homeAnim2");
     document
       .querySelector("head")
-      .insertAdjacentHTML(
+      .insertAdjacentHTML(, 'beforeend',
         '<meta name="google-site-verification" content="vw6HDZ35LiGY8zf1WbUlz1lo3d4SUh8EeSubOqPO_Jw" />'
       );
   },
