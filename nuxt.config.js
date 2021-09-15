@@ -8,6 +8,10 @@ export default {
       lang: "en"
     },
     meta: [
+      {
+        name: "google-site-verification",
+        content: "vw6HDZ35LiGY8zf1WbUlz1lo3d4SUh8EeSubOqPO_Jw"
+      },
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
@@ -59,7 +63,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: "~/plugins/v-tooltip.js" },
-    { src: "~/plugins/vue-carousel", ssr: false }, 
+    { src: "~/plugins/vue-carousel", ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
