@@ -10,6 +10,7 @@ export default {
     meta: [
       { charset: "utf-8" },
       {
+        hid:"google-site-verification",
         name: "google-site-verification",
         content: "vw6HDZ35LiGY8zf1WbUlz1lo3d4SUh8EeSubOqPO_Jw"
       },

@@ -24,7 +24,8 @@ export default {
       meta: [
         { name: "keywords", content: "mohamed ifouloussene" },
         {
-          name: "google-site-verification", content: "vw6HDZ35LiGY8zf1WbUlz1lo3d4SUh8EeSubOqPO_Jw"
+          name: "google-site-verification",
+          content: "vw6HDZ35LiGY8zf1WbUlz1lo3d4SUh8EeSubOqPO_Jw"
         }
       ]
     };
@@ -32,6 +33,11 @@ export default {
   mounted() {
     this.$refs["homeref"].classList.add("homeAnim");
     this.$refs["home2ref"].classList.add("homeAnim2");
+    document
+      .querySelector("head")
+      .insertAdjacentHTML(
+        '<meta name="google-site-verification" content="vw6HDZ35LiGY8zf1WbUlz1lo3d4SUh8EeSubOqPO_Jw" />'
+      );
   },
   methods: {
     moreCli() {
