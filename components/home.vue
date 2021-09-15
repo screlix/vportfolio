@@ -22,22 +22,14 @@ export default {
   head() {
     return {
       meta: [
-        {
-          name: "google-site-verification",
-          content: "vw6HDZ35LiGY8zf1WbUlz1lo3d4SUh8EeSubOqPO_Jw"
-        }
+        { name: "keywords", content: "mohamed ifouloussene" },
       ]
     };
   },
   mounted() {
     this.$refs["homeref"].classList.add("homeAnim");
     this.$refs["home2ref"].classList.add("homeAnim2");
-    document
-      .querySelector("head")
-      .insertAdjacentHTML(
-        "beforeend",
-        '<meta name="google-site-verification" content="vw6HDZ35LiGY8zf1WbUlz1lo3d4SUh8EeSubOqPO_Jw" />'
-      );
+   
   },
   methods: {
     moreCli() {
