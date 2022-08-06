@@ -31,6 +31,7 @@
             ><i class="fab fa-linkedin-in"></i
           ></a>
         </li>
+        done
       </ul>
     </div>
     <h1 class="mohamedifouloussene">
@@ -46,18 +47,18 @@
 export default {
   head() {
     return {
-      meta: [{ name: "keywords", content: "mohamed ifouloussene" }]
+      meta: [{ name: "keywords", content: "mohamed ifouloussene" }],
     };
   },
   mounted() {
-    this.observer = new IntersectionObserver(entries => {
+    this.observer = new IntersectionObserver((entries) => {
       if (entries[0].intersectionRatio > 0) {
         this.$refs["aboutref1"].classList.add("about1Anim");
         this.$refs["aboutref2"].classList.add("about2Anim");
       }
     });
     this.observer.observe(this.$refs.aboutref);
-  }
+  },
 };
 </script>
 
