@@ -31,11 +31,6 @@
             ><i class="fab fa-linkedin-in"></i
           ></a>
         </li>
-        <li>
-          <a href="https://www.instagram.com/nervo.1/"
-            ><i class="fab fa-instagram"></i
-          ></a>
-        </li>
       </ul>
     </div>
     <h1 class="mohamedifouloussene">
